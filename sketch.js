@@ -75,15 +75,20 @@ function draw() {
   playerArcher.display();
   computerArcher.display()
 
- // Uncomment and use correct for loop to display arrow using showArrow() function
- for (var i=0; i<playerArrows.length; i++) 
- {
+ 
+  for (var i=0; i<playerArrows.length; i++) 
+  {
  showArrows(i, playerArrows);
  }
 
+
+
+
+
+
 }
 
-
+/*********** Choose correct keyPressed() function out of these *************/
 
 function keyPressed() {
   if(keyCode === 32){
@@ -97,6 +102,11 @@ function keyPressed() {
     playerArrows.push(arrow);
   }
 }
+
+
+
+
+
 
 function keyReleased () {
 
